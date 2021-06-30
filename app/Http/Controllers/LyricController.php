@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Lyric;
 use App\SongTitle;
+use App\Post;
 
 class LyricController extends Controller
 {
@@ -12,7 +13,7 @@ class LyricController extends Controller
     {
         
         $lyric = SongTitle::find($song_title_id)->lyrics;
-        
-        return view('Lyric.show')->with(['lyric' => $lyric]);
+        $posts = \DB::table('posts')->get();
+        return view('Lyric.show')->with(['lyric' => $lyric, 'posts' => $posts]);
     }
 }

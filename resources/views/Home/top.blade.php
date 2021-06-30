@@ -8,7 +8,8 @@
     </head>
     <body>
         <h1>G-CHORD</h1>
-        <a href="/artists">アーティスト一覧</a>
+        <a href="/login">ログインする</a><br>
+        <a href="/register">アカウントを登録する</a>
         </div>
     </body>
 </html>

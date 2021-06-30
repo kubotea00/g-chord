@@ -10,8 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'HomeController@index');
+Auth::routes();
+Route::get('/', 'MypageController@index') -> middleware('auth');
 Route::get('/artists', 'ArtistController@index');
-Route::get('/artists/{artist}', 'SongTitleController@index');
+Route::post('/artists/{artist_id}/{song_title_id}', 'PostController@create');
 Route::get('/artists/{artist_id}/{song_title_id}', 'LyricController@show');
+Route::get('/artists/{artist}', 'SongTitleController@index');
