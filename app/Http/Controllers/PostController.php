@@ -7,8 +7,10 @@ use App\Post;
 
 class PostController extends Controller
 {
-    public function create()
+    public function store(Request $request, Post $post, $artist_id, $song_title_id)
     {
-        return view('Lyric.show');
+        $input = $request['post'];
+        $post->fill($input)->save();
+        return redirect('/artists/'.$artist_id.'/'.$song_title_id);
     }
 }

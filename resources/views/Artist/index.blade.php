@@ -3,11 +3,18 @@
 @section('content')
     <h1>アーティスト一覧</h1>
     <div class='artists'>
-        @foreach ($artists as $artist)
             <div class='artist'>
-                <a href="/artists/{{ $artist->id }}">{{ $artist->name }}</a>
+                <table class='table'>
+                    <tr>
+                        <th>アーティスト名</th>
+                    </tr>
+                    @foreach ($artists as $artist)
+                        <tr>
+                            <th><a href="/artists/{{ $artist->id }}">{{ $artist->name }}</a></th>
+                        </tr>
+                    @endforeach
+                </table>
             </div>
-        @endforeach
-    </div>
+     </div>
 @endsection
    
