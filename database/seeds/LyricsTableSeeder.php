@@ -13,8 +13,8 @@ class LyricsTableSeeder extends Seeder
     {
          DB::table('lyrics')->insert([
             'song_title_id' => '1',
-            'name' => '鱗',
-            'body' => 'storage/song/鱗.png',
+            'name' => 'タイトル未定(1コーラス)',
+            'body' => 'storage/song/タイトル未定.png',
         ]);
     }
 }

@@ -13,19 +13,7 @@ class SongTitlesTableSeeder extends Seeder
     {
          DB::table('song_titles')->insert([
             'artist_id' => '1',
-            'name' => '鱗',
-        ]);
-        DB::table('song_titles')->insert([
-            'artist_id' => '2',
-            'name' => Str::random(10),
-        ]);
-        DB::table('song_titles')->insert([
-            'artist_id' => '3',
-            'name' => Str::random(10),
-        ]);
-        DB::table('song_titles')->insert([
-            'artist_id' => '4',
-            'name' => Str::random(10),
+            'name' => 'タイトル未定（1コーラス)',
         ]);
     }
 }

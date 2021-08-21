@@ -12,10 +12,8 @@ class ArtistsTableSeeder extends Seeder
     public function run()
     {
          DB::table('artists')->insert([
-            'name' => '秦基博',
+            'name' => '窪田朝陽',
         ]);
-        DB::table('artists')->insert([
-            'name' => Str::random(10),
-        ]);
+        
     }
 }
