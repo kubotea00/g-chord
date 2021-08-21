@@ -29,5 +29,9 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-
+    'google' => [
+    'client_id'=>env('968272046172-h0kbtl9nijbjsh029qn4f30ilhiftqm7.apps.googleusercontent.com'),
+    'client_secret'=>env('gk92VDpvXyNe06UY8Mtcz9EI'),
+    'redirect'=>env('https://calm-sea-47307.herokuapp.com/'),
+    ],
 ];
