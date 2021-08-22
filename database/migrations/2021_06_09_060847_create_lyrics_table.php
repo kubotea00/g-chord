@@ -17,7 +17,7 @@ class CreateLyricsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('song_title_id');
             $table->string('name');
-            $table->string('body');
+            $table->text('image');
             $table->timestamps();
         });
     }

@@ -3,7 +3,7 @@
 @section('content')
     <h1>{{ $lyric->name }}</h1>
     <div class="lyric">
-        <img src="{{ asset($lyric->body) }}">
+        <img src="data:png;base64,{{ $image }}">
     </div>
     
     <h1>コメント</h1>
