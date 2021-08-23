@@ -9,7 +9,7 @@ use App\Post;
 
 class LyricController extends Controller
 {
-    public function show(Request $request, $artist_id, $song_title_id)
+    public function show($artist_id, $song_title_id)
     {
         $lyric = SongTitle::find($song_title_id)->lyrics;
         $image = base64_encode(file_get_contents($lyric->image));
