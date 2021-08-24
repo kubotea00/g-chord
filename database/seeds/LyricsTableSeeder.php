@@ -14,7 +14,7 @@ class LyricsTableSeeder extends Seeder
          DB::table('lyrics')->insert([
             'song_title_id' => '1',
             'name' => 'タイトル未定(1コーラス)',
-            'image' => 'storage/song/non-title.png',
+            'image' => '/g-chord/public/storage/song/non-title.png',
         ]);
     }
 }
