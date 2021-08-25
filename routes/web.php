@@ -12,6 +12,8 @@
 */
 Auth::routes();
 Route::get('/', 'MypageController@index') -> middleware('auth');
+Route::get('/auth/{service}', 'OAuthLoginController@getGoogleAuth')->where('service', 'google');
+Route::get('/auth/callback/google', 'OAuthLoginController@authGoogleCallback');
 Route::get('/artists', 'ArtistController@index');
 Route::get('/artists/search', 'ArtistController@search');
 Route::get('/artists/{artist_id}/{song_title_id}', 'LyricController@show');
