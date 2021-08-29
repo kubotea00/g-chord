@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </form>
-                    <a class=”btn btn-block btn-social btn-google” href=”auth/google”>
+                    <a class=”btn btn-block btn-social btn-google” href=login/google>
                         <i class=”fab fa-google” aria-hidden=”true”> Googleアカウントでログイン</i>
                     </a>
                 </div>
