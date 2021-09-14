@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>{{ $my_score_lyric->name }}</h1>
+    <h1>{{ $my_score_lyric->title }}</h1>
     <div class="lyric">
-        <img src={{ $my_score_lyric->image }}>
+        <img src={{ $my_score_lyric->path }}>
     </div>
     
     <h1>コメント</h1>
@@ -12,14 +12,14 @@
             <div class='post'>
                 <h2 class='title'>{{ $my_score_comment->name }}</h2>
                 <p class='body'>{{ $my_score_comment->content }}</p>
-                <form style="display: inline-block;" method="POST" action="/myscore/{{ $user_id }}/{{ $my_score_title_id }}/{{ $my_score_comment->id }}">
+                <form style="display: inline-block;" method="POST" action="/myscore/{{ $user_id }}/{{ $my_score_id }}/{{ $my_score_comment->id }}">
                     @csrf
                     @method('DELETE')
                     <button class="btn btn-danger">削除する</button>
                 </form>
             </div>
         @endforeach
-        <form action="/myscore/{{ $user_id }}/{{ $my_score_title_id }}" method="POST">
+        <form action="/myscore/{{ $user_id }}/{{ $my_score_id }}" method="POST">
             @csrf
             <div class="name">
                 <h2>ユーザーネーム</h2>
