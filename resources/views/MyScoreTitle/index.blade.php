@@ -5,7 +5,7 @@
     <div class='my_score_titles'>
         @foreach ($my_score_title as $my_score_title)
             <div class='my_score_title'>
-                <a href="/myscore/{{ $my_score_title->user_id }}/{{ $my_score_title->id }}">{{ $my_score_title->name }}</a>
+                <a href="/myscore/{{ $my_score_title->user_id }}/{{ $my_score_title->id }}">{{ $my_score_title->title }}</a>
             </div>
         @endforeach
     </div>

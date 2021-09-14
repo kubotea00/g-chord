@@ -8,6 +8,7 @@
                     <tr>
                         <th>ユーザー名</th>
                     </tr>
+                    <a href="/myscore/upload">楽譜を投稿する</a>
                     @foreach ($users as $user)
                         <tr>
                             <th><a href="/myscore/{{ $user->id }}">{{ $user->name }}の楽譜</a></th>

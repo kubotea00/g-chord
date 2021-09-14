@@ -16,4 +16,8 @@ class MyScoreTitle extends Model
     {
         return $this->hasOne('App\MyScoreLyric');
     }
+    public function myScores()
+    {
+        return $this->belongsTo('App\MyScore');
+    }
 }

@@ -13,7 +13,7 @@ class MyScoreTitleController extends Controller
     public function index(User $user, MyScoreTitle $my_score_title)
     {
        $user_id = $user->id;
-       $my_score_title = User::find($user_id)->myScoreTitles;
+       $my_score_title = User::find($user_id)->myScores;
        return view('MyScoreTitle.index')->with(['my_score_title' => $my_score_title]);
     }
 }

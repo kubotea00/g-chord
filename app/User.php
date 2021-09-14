@@ -36,4 +36,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+     public function myScoreTitles()
+    {
+        return $this->hasMany('App\MyScoreTitle');
+    }
+    public function myScores()
+    {
+        return $this->hasMany('App\MyScore');
+    }
 }

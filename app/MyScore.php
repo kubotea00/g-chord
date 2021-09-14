@@ -6,8 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class MyScore extends Model
 {
-    public function myscoreTitles()
+    public function myScoreTitles()
     {
-        return $this->hasMany('App\MyScoreTitle');
+        return $this->hasOne('App\MyScoreTitle');
+    }
+    public function users()
+    {
+        return $this->belongsTo('App\User');
+    }
+    public function myScoreLyrics()
+    {
+        return $this->hasOne('App\MyScoreLyric');
     }
 }

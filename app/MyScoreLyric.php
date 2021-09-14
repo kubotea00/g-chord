@@ -11,4 +11,12 @@ class MyScoreLyric extends Model
     {
         return $this->belongsTo('App\MyScoreTitle');
     }
+    public function myScores()
+    {
+        return $this->belongsTo('App\MyScore');
+    }
+    public function myScoreTitles()
+    {
+        return $this->belongsTo('App\MyScoreTitle');
+    }
 }
