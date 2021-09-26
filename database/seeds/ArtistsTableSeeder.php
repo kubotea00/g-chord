@@ -14,6 +14,9 @@ class ArtistsTableSeeder extends Seeder
          DB::table('artists')->insert([
             'name' => '窪田朝陽',
         ]);
+         DB::table('artists')->insert([
+            'name' => '秦基博',
+        ]);
         
     }
 }

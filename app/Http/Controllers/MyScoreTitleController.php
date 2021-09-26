@@ -14,6 +14,6 @@ class MyScoreTitleController extends Controller
     {
        $user_id = $user->id;
        $my_score_title = User::find($user_id)->myScores;
-       return view('MyScoreTitle.index')->with(['my_score_title' => $my_score_title]);
+       return view('MyScoreTitle.index')->with(['my_score_titles' => $my_score_title]);
     }
 }

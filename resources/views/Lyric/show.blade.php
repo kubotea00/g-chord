@@ -3,7 +3,7 @@
 @section('content')
     <h1>{{ $lyric->name }}</h1>
     <div class="lyric">
-        <img src="https://g-chord.s3.ap-northeast-1.amazonaws.com/%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E6%9C%AA%E5%AE%9A.png">
+        <img src="{{ $lyric->url }}">
     </div>
     
     <h1>コメント</h1>
