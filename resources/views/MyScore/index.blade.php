@@ -2,8 +2,8 @@
 
 @section('content')
     <h1>ユーザー一覧</h1>
-    <div class='artists'>
-            <div class='artist'>
+    <div class='myscores'>
+            <div class='myscore'>
                 <table class='table'>
                     <tr>
                         <th>ユーザー名</th>
