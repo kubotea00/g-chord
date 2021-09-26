@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>アーティスト一覧</h1>
     <div class='artists'>
             <div class='artist'>
                 <table class='table'>
