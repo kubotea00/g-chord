@@ -10,16 +10,14 @@
     <div class='posts'>
         @foreach ($posts as $post)
             <div class='post'>
-                <table class="table">
-                    <th><h2 class='title'>{{ $post->name }}</h2>
-                    <p class='body'>>>{{ $post->content }}</p></th>
+                    <h2 class='title'>{{ $post->name }}</h2>
+                    <p class='body'>>>{{ $post->content }}</p>
                     <form style="display: inline-block;" method="POST" action="/artists/{{ $artist_id }}/{{ $song_title_id }}/{{ $post->id }}">
                         @csrf
                         @method('DELETE')
                         <button class="btn btn-danger">削除する</button>
                     </form>
-                </table>
-            </div>
+                </div>
         @endforeach
         <form action="/artists/{{ $artist_id }}/{{ $song_title_id }}" method="POST">
             @csrf

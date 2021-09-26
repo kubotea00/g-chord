@@ -10,15 +10,13 @@
     <div class='posts'>
         @foreach ($my_score_comments as $my_score_comment)
             <div class='post'>
-                <table class="table">
-                    <th></th><h2 class='title'>{{ $my_score_comment->name }}</h2>
-                    <p class='body'>>>{{ $my_score_comment->content }}</p></th>
+                    <h2 class='title'>{{ $my_score_comment->name }}</h2>
+                    <p class='body'>>>{{ $my_score_comment->content }}</p>
                     <form style="display: inline-block;" method="POST" action="/myscore/{{ $user_id }}/{{ $my_score_id }}/{{ $my_score_comment->id }}">
                         @csrf
                         @method('DELETE')
                         <button class="btn btn-danger">削除する</button>
                     </form>
-                </table>
             </div>
         @endforeach
         <form action="/myscore/{{ $user_id }}/{{ $my_score_id }}" method="POST">
