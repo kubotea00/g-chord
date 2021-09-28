@@ -23,7 +23,7 @@
             @csrf
             <div class="name">
                 <h2>ユーザーネーム</h2>
-                <input type="text" name="post[name]" placeholder="タイトル"/>
+                <input type="text" name="post[name]" placeholder="ユーザー名"/>
             </div>
             <div class="content">
                 <h2>内容</h2>

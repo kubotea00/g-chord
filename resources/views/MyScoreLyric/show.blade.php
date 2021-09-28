@@ -3,7 +3,7 @@
 @section('content')
     <h1>{{ $my_score_lyric->title }}</h1>
     <div class="lyric">
-        <img src={{ $my_score_lyric->path }}>
+        <img src={{ $my_score_lyric->path }} oncontextmenu="return false">
     </div>
     
     <h1>コメント</h1>
@@ -23,7 +23,7 @@
             @csrf
             <div class="name">
                 <h2>ユーザーネーム</h2>
-                <input type="text" name="my_score_comment[name]" placeholder="タイトル"/>
+                <input type="text" name="my_score_comment[name]" placeholder="ユーザー名"/>
             </div>
             <div class="content">
                 <h2>内容</h2>
