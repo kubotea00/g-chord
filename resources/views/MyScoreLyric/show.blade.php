@@ -2,6 +2,14 @@
 
 @section('content')
     <h1>{{ $my_score_lyric->title }}</h1>
+    <input type="button" value="スクロールする" onClick="scrollPage()" />
+    <script>
+        var speed = 40;
+        function scrollPage() {
+        window.scrollBy(0,1);
+        setTimeout("scrollPage()",speed);
+        }
+    </script>
     <div class="lyric">
         <img src={{ $my_score_lyric->path }} oncontextmenu="return false">
     </div>
