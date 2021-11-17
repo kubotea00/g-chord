@@ -17,8 +17,8 @@ class LyricController extends Controller
     {
         $lyric = SongTitle::find($song_title_id)->lyrics;
         $posts = Post::all();
-        $like = DB::table('likes')->where('artist_id', $artist_id)->where('song_title_id', $song_title_id)->where('user_id', auth()->user()->id)->first();
-        $like_count = DB::table('likes')->where('artist_id', $artist_id)->where('song_title_id', $song_title_id)->count();
+        $like = Like::where('artist_id', $artist_id)->where('song_title_id', $song_title_id)->where('user_id', auth()->user()->id)->first();
+        $like_count = Like::where('artist_id', $artist_id)->where('song_title_id', $song_title_id)->count();
         return view('Lyric.show')->with(['lyric' => $lyric, 'posts' => $posts, 'song_title' => $song_title, 'like' => $like, 'like_count' => $like_count, 'artist_id' => $artist_id, 'song_title_id' => $song_title_id]);
     }
     public function like(SongTitle $song_title, Request $request, $artist_id, $song_title_id)
