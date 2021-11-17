@@ -6,8 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lyric extends Model
 {
-    public function artists()
+    public function likeUsers()
     {
-        return $this->belongsTo('App\SongTitle');
+        return $this->belongsTo('App\User');
+    }
+    public function likes()
+    {
+        return $this->hasMany('App\Like');
     }
 }

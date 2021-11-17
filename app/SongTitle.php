@@ -15,4 +15,12 @@ class SongTitle extends Model
     {
         return $this->hasOne('App\Lyric');
     }
+    public function likeUsers()
+    {
+        return $this->belongsTo('App\User');
+    }
+    public function likes()
+    {
+        return $this->hasMany('App\Like');
+    }
 }

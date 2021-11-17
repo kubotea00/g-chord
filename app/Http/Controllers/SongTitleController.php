@@ -6,8 +6,13 @@ use Illuminate\Http\Request;
 use App\SongTitle;
 use App\Artist;
 
+
 class SongTitleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['auth', 'verified'])->only(['like', 'unlike']);
+    }
     public function index(Artist $artist, SongTitle $song_title)
     {
        $artist_id = $artist->id;

@@ -13,7 +13,23 @@
     <div class="lyric">
         <img src="{{ $lyric->url }}">
     </div>
-    
+    <span>
+        @if ($like)
+        	<a href="/artists/{{ $artist_id }}/{{ $song_title_id }}/unlike" class="btn btn-success btn-sm">
+        	    いいね
+        	    <span class="badge">
+        			{{ $like_count }}
+        		</span>
+        	</a>
+        @else
+        	<a href="/artists/{{ $artist_id }}/{{ $song_title_id }}/like" class="btn btn-secondary btn-sm">
+        	    いいね
+        	   <span class="badge">
+        			{{ $like_count }}
+        		</span>
+        	</a>
+        @endif
+    </span>
     <h1>コメント</h1>
     <div class='posts'>
         @foreach ($posts as $post)

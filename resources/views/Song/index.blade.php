@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@inject('song_title_controller', 'App\Http\Controllers\SongTitleController')
 @section('content')
     <h1>曲一覧</h1>
     <div class='song_titles'>
@@ -13,7 +13,7 @@
                             <th><a href="/artists/{{ $song_title->artist_id }}/{{ $song_title->id }}">{{ $song_title->name }}</a></th>
                         </tr>
                     </div>
-                @endforeach
+                @endforeach    
         </table>
     </div>
 @endsection
