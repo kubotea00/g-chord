@@ -6,7 +6,14 @@
 
 このアプリケーションの特徴として，自身の作成した楽譜を投稿することができます。
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+通常，楽譜に関するアプリケーションは提供者側から利用者側に楽譜を提供するという，いわば一方通行のようなサービスでした。
+しかしこの形態では楽譜の提供数にも限界があり，現在このようなアプリケーションの多くは有名なアーティストの楽譜のみが閲覧できるという状況です。
+
+楽譜の数やバリエーションを増やし，ユーザーにより良い体験をして貰いたいと考え，実装したのが楽譜の投稿機能でした。
+
+
+
+
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
