@@ -4,7 +4,7 @@
 
 ## Features
 
-このアプリケーションの特徴として，自身の作成した楽譜を投稿することができます。
+このアプリケーションの特徴として，自身の作成した楽譜を投稿することができるというものがあります。
 
 通常，楽譜に関するアプリケーションは提供者側から利用者側に楽譜を提供するという，いわば一方通行のようなサービスでした。
 しかしこの形態では楽譜の提供数にも限界があり，現在このようなアプリケーションの多くは有名なアーティストの楽譜のみが閲覧できるという状況です。
@@ -15,28 +15,37 @@
 
 また，通常の楽譜の閲覧アプリケーションの機能も持ち合わせているため，有名なアーティストの楽曲とユーザーが作成した楽曲の両方を網羅できるという強みがあります。
 
+## Overview
+
+1. 楽譜の閲覧機能
+2. 楽譜の投稿機能
+3. 投稿された楽譜へのコメント機能
+4. 投稿された楽譜へのいいね機能(公式投稿に限る）
+5. 楽譜の自動スクロール機能
+
 ## Requirement
 
 PHP 7.3.27
 
 Laravel Framework 6.20.32
 
+## Test Account
 
+Eメール：guestaccount01@gmail.com
 
-## Contributing
+パスワード：guest0001
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Author
 
-## Code of Conduct
+※ 窪田朝陽
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+帝京大学　文学部　心理学科
 
-## Security Vulnerabilities
+    kubotea00@gmail.com   
+## Note
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+アプリケーション内ではあくまで自身の作成した楽曲のみが投稿できます。著作権上の問題もありますので，他者の作成した楽曲の楽譜は投稿しないようにお願いいたします。
 
 *プレリリースのため，投稿されている楽譜は全てオリジナルのものとなっており，これら全ての楽譜の権利はアプリケーションの制作者が留保しています。
+
+
